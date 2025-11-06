@@ -50,7 +50,7 @@ const NavItemTooltip = ({ children, itemName, isCollapsed, isMobile }) => {
           <div
             className="text-white px-4 py-2.5 rounded-lg shadow-xl whitespace-nowrap font-medium text-sm relative"
             style={{
-              background: 'linear-gradient(135deg, #1f3044 0%, #192636 100%)',
+              background: 'linear-gradient(135deg, #1A2839 0%, #192636 100%)',
             }}
           >
             {itemName}
@@ -60,7 +60,7 @@ const NavItemTooltip = ({ children, itemName, isCollapsed, isMobile }) => {
             style={{
               borderTop: '6px solid transparent',
               borderBottom: '6px solid transparent',
-              borderRight: '6px solid #1f3044'
+              borderRight: '6px solid #1A2839'
             }}
           ></div>
         </div>
@@ -390,33 +390,33 @@ const Sidebar = ({
           stroke: currentColor !important;
         }
         .nav-link-group:hover .nav-icon {
-          color: #ffffff !important;
+          color: #BAA377 !important;
           transform: translateX(2px);
         }
         .nav-link-group:hover .nav-icon svg {
-          stroke: #ffffff !important;
+          stroke: #BAA377 !important;
         }
         .nav-link-group:not(:hover) .nav-icon.text-gray-600 {
           color: #6b7280 !important;
         }
         .nav-link-group:not(:hover) .nav-icon.text-white {
-          color: #ffffff !important;
+          color: #BAA377 !important;
         }
         .nav-link-group .nav-text {
           transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0s !important;
         }
         .nav-link-group:hover .nav-text {
-          color: #ffffff !important;
+          color: #BAA377 !important;
         }
         .sidebar-gradient {
-          background: linear-gradient(180deg, #1f3044 0%, #131c28 100%);
+          background: linear-gradient(180deg, #1A2839 0%, #131c28 100%);
         }
         .nav-item-active {
-          background: linear-gradient(135deg, #1f3044 0%, #192636 100%) !important;
+          background: linear-gradient(135deg, #1A2839 0%, #192636 100%) !important;
           box-shadow: 0 4px 12px rgba(31, 48, 68, 0.4) !important;
         }
         .nav-item-hover {
-          background: linear-gradient(135deg, #1f3044 0%, #192636 100%) !important;
+          background: linear-gradient(135deg, #1A2839 0%, #192636 100%) !important;
           box-shadow: 0 2px 8px rgba(31, 48, 68, 0.3) !important;
         }
         .scrollbar-hide {
@@ -445,37 +445,25 @@ const Sidebar = ({
         }}
       >
         {/* Header Section */}
-        <div className="flex flex-col overflow-visible">
-          <div className="flex items-center justify-between p-5 border-b border-white/10">
+        <div className="flex flex-col overflow-visible w-full">
+          <div className="flex items-center justify-between p-5 border-b border-white/10 w-full">
             {(!isCollapsed || isMobile) && (
               <Link
                 to="/dashboard"
-                className="flex items-center space-x-3 cursor-pointer select-none"
+                className="flex items-center space-x-3 cursor-pointer select-none w-full"
               >
-                <div className="rounded-lg p-2">
+                <div className="flex items-center justify-center rounded-lg  mr-10 p-2 w-full h-10">
                   <img
-                    src="/logo/logo.svg"
+                    src="/logo/logo__2_-removebg-preview (1).png"
                     alt="CaringAI Logo"
-                    className="h-7 w-auto"
+                    className="h-9 w-full object-contain   "
                   />
                 </div>
 
+
               </Link>
             )}
-            {/* {isCollapsed && !isMobile && (
-              <Link
-                to="/dashboard"
-                className="flex items-center justify-center cursor-pointer select-none w-full"
-              >
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2">
-                  <img
-                    src="/logo/logo.svg"
-                    alt="CaringAI Logo"
-                    className="h-8 w-auto"
-                  />
-                </div>
-              </Link>
-            )} */}
+
             <button
               onClick={isMobile ? onCloseMobileMenu : onToggle}
               className="p-2 rounded-lg text-white/80 hover:text-white hover:bg-white/10 transition-all duration-200 ease-in-out cursor-pointer"
@@ -537,8 +525,8 @@ const Sidebar = ({
                         className={`nav-link-group w-full flex items-center space-x-3 px-4 py-3 rounded-xl text-left text-sm cursor-pointer
                       transition-all duration-200 ease-in-out relative overflow-hidden
                       ${isActive
-                            ? "nav-item-active text-white"
-                            : "text-white/70 hover:nav-item-hover hover:text-white"
+                            ? "nav-item-active text-[#BAA377]"
+                            : "text-white/70 hover:nav-item-hover hover:text-[#BAA377]"
                           }
                       ${isCollapsed && !isMobile ? "justify-center px-3 py-3" : ""}
                       before:absolute before:inset-0 before:bg-white/5 before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-200
@@ -547,7 +535,7 @@ const Sidebar = ({
                         <span className={`flex items-center relative z-10 ${isCollapsed && !isMobile ? "justify-center" : "gap-3"
                           }`}>
                           <span
-                            className={`nav-icon ${isActive ? "text-white" : "text-white/70"
+                            className={`nav-icon ${isActive ? "text-[#BAA377]" : "text-white/70"
                               }`}
                           >
                             {item?.icon}
@@ -575,9 +563,9 @@ const Sidebar = ({
               }`}
           >
             <div
-              className="w-10 h-10 rounded-full flex items-center justify-center shadow-lg ring-2 ring-white/20"
+              className="w-10 h-10 rounded-full flex items-center justify-center shadow-lg  "
               style={{
-                background: "linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%)"
+                background: 'linear-gradient(135deg, #BAA377 0%, #A8956A 100%)'
               }}
             >
               <span className="text-brand-600 font-bold text-sm">

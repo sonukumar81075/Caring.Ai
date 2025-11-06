@@ -533,11 +533,11 @@ const Patients = () => {
                   border: "1px solid #D1D5DB", // Tailwind gray-300
                   color: "#FFFFFF",
                   borderRadius: "50%",
-                  backgroundColor: "#BAA377",
+                  backgroundColor: "#334155",
                   "&:hover": {
-                    backgroundColor: "#A8956A", // Button hover
+                    backgroundColor: "#BAA377", // Button hover
                     color: "#ffffff",
-                    borderColor: "#A8956A", // Button hover
+                    borderColor: "#BAA377", // Button hover
                   },
                   transition: "all 0.15s ease-in-out",
                 }}
@@ -554,11 +554,11 @@ const Patients = () => {
                     border: "1px solid #D1D5DB", // Tailwind gray-300
                     color: "#FFFFFF",
                     borderRadius: "50%",
-                    backgroundColor: "#BAA377",
+                    backgroundColor: "#334155",
                     "&:hover": {
-                      backgroundColor: "#A8956A", // Button hover
+                      backgroundColor: "#BAA377", // Button hover
                       color: "#ffffff",
-                      borderColor: "#A8956A", // Button hover
+                      borderColor: "#BAA377", // Button hover
                     },
                     transition: "all 0.15s ease-in-out",
                   }}
@@ -575,11 +575,11 @@ const Patients = () => {
                     border: "1px solid #D1D5DB", // Tailwind gray-300
                     color: "#FFFFFF",
                     borderRadius: "50%",
-                    backgroundColor: "#BAA377",
+                    backgroundColor: "#334155",
                     "&:hover": {
-                      backgroundColor: "#A8956A", // Button hover
+                      backgroundColor: "#BAA377", // Button hover
                       color: "#ffffff",
-                      borderColor: "#A8956A", // Button hover
+                      borderColor: "#BAA377", // Button hover
                     },
                     transition: "all 0.15s ease-in-out",
                   }}
@@ -715,21 +715,32 @@ const Patients = () => {
               </FormControl>
 
               <Button
-                variant="outlined"
+                variant="contained"
                 startIcon={<RefreshIcon />}
                 onClick={handleRefresh}
                 disabled={!serverOnline || !isAuthenticated}
                 size="small"
                 sx={{
-                  backgroundColor: "#ffffff",
-                  color: "#475569",
+                  backgroundColor: "#BAA377",
+                  color: "#ffffff",
                   borderRadius: "6px",
-                  borderColor: "#9ca3af",
+                  borderColor: "#BAA377",
                   padding: "7px 16px",
                   fontFamily: "Inter, sans-serif",
                   width: {
                     xs: "100%",
                     sm: "auto",
+                  },
+                  "&:hover": {
+                    backgroundColor: "#A8956A",
+                    borderColor: "#A8956A",
+                    color: "#ffffff",
+                  },
+                  "&:disabled": {
+                    backgroundColor: "#d1d5db",
+                    color: "#9ca3af",
+                    borderColor: "#d1d5db",
+                    opacity: 0.6,
                   },
                 }}
               >
@@ -738,19 +749,32 @@ const Patients = () => {
             </Box>
             <Box sx={{ display: "flex", gap: 2 }}>
               <Button
-                variant="outlined"
+                variant="contained"
                 startIcon={
-                  <FileDownloadIcon className="text-gray-500 text-[12px]" />
+                  <FileDownloadIcon style={{ color: "#ffffff", fontSize: "12px" }} />
                 }
                 onClick={(e) => setExportMenuAnchor(e.currentTarget)}
                 disabled={!serverOnline || !isAuthenticated}
                 style={{
-                  backgroundColor: "#ffffff",
-                  color: "#475569",
+                  backgroundColor: "#BAA377",
+                  color: "#ffffff",
                   borderRadius: "6px",
                   padding: "7px 20px",
-                  border: "1px solid #9ca3af",
+                  border: "1px solid #BAA377",
                   fontFamily: "Inter, sans-serif",
+                }}
+                sx={{
+                  "&:hover": {
+                    backgroundColor: "#A8956A",
+                    borderColor: "#A8956A",
+                    color: "#ffffff",
+                  },
+                  "&:disabled": {
+                    backgroundColor: "#d1d5db",
+                    color: "#9ca3af",
+                    borderColor: "#d1d5db",
+                    opacity: 0.6,
+                  },
                 }}
               >
                 Export
@@ -762,12 +786,14 @@ const Patients = () => {
                 onClick={handleOpenAdd}
                 disabled={!serverOnline || !isAuthenticated}
                 sx={{
-                  background: "linear-gradient(135deg, #BAA377 0%, #A8956A 100%)",
+                  background: "#334155",
                   "&:hover": {
-                    background: "linear-gradient(135deg, #A8956A 0%, #9A8760 100%)",
+                    background: "#192636",
                   },
                   "&:disabled": {
-                    backgroundColor: "grey.500",
+                    backgroundColor: "#d1d5db",
+                    color: "#9ca3af",
+                    opacity: 0.6,
                   },
                   borderRadius: "6px",
                   padding: {

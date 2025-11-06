@@ -85,7 +85,7 @@ const ChangePassword = () => {
   const getStrengthColor = (score) => {
     if (score <= 2) return "text-red-500";
     if (score <= 3) return "text-yellow-500";
-    if (score <= 4) return "text-blue-500";
+    if (score <= 4) return "text-[#BAA377]";
     return "text-green-500";
   };
 
@@ -287,7 +287,7 @@ const ChangePassword = () => {
                         : passwordStrength.score <= 3
                         ? "bg-yellow-500"
                         : passwordStrength.score <= 4
-                        ? "bg-blue-500"
+                        ? "bg-[#334155]"
                         : "bg-green-500"
                     }`}
                     style={{ width: `${(passwordStrength.score / 5) * 100}%` }}
@@ -395,7 +395,7 @@ const ChangePassword = () => {
         <h3 className="text-sm font-medium text-blue-900 mb-2">
           Password Security Tips
         </h3>
-        <ul className="text-xs text-blue-800 space-y-1">
+        <ul className="text-xs text-[#BAA377] space-y-1">
           <li>
             • Use at least 8 characters with a mix of letters, numbers, and
             symbols

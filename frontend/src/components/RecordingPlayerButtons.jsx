@@ -57,7 +57,7 @@ export const RecordingPlayerButtons = ({ BUTTON_CONFIG, url }) => {
   };
 
   const buttonClass =
-    "p-2 border border-gray-300 rounded-full bg-color bg-hover hover:text-white hover:border-gray-600 cursor-pointer transition-colors duration-150 disabled:opacity-50 disabled:cursor-not-allowed";
+    "p-2 border border-gray-300 rounded-full bg-[#BAA377] bg-hover hover:text-white hover:border-gray-600 cursor-pointer transition-colors duration-150 disabled:opacity-50 disabled:cursor-not-allowed";
 
   const onClickByKey = {
     play: isPlaying ? handlePause : handlePlay,
@@ -82,7 +82,7 @@ export const RecordingPlayerButtons = ({ BUTTON_CONFIG, url }) => {
           disabled={disabled}
           title={disabled ? 'No recording available' : effectiveLabel}
         >
-          {EffectiveIcon && <EffectiveIcon className="text-white text-lg" />}
+          {EffectiveIcon && <EffectiveIcon className="text-lg" style={{ color: '#ffffff' }} />}
         </button>
         );
       })}

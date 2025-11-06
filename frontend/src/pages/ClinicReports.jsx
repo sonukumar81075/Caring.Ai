@@ -81,7 +81,7 @@ const ClinicReports = () => {
       case "pending":
         return <Clock className="w-4 h-4 text-yellow-500" />;
       case "approved":
-        return <CheckCircle className="w-4 h-4 text-blue-500" />;
+        return <CheckCircle className="w-4 h-4 text-[#BAA377]" />;
       case "cancelled":
         return <XCircle className="w-4 h-4 text-red-500" />;
       default:
@@ -184,7 +184,22 @@ const ClinicReports = () => {
           <div className="flex gap-2 mt-4">
             <button
               onClick={clearFilters}
-              className="px-4 py-2 text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+              className="px-4 py-2 rounded-lg transition-colors"
+              style={{
+                color: "#ffffff",
+                border: "1px solid #BAA377",
+                backgroundColor: "#BAA377",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "#A8956A";
+                e.currentTarget.style.color = "#ffffff";
+                e.currentTarget.style.borderColor = "#A8956A";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "#BAA377";
+                e.currentTarget.style.color = "#ffffff";
+                e.currentTarget.style.borderColor = "#BAA377";
+              }}
             >
               Clear Filters
             </button>
@@ -431,7 +446,7 @@ const ClinicReports = () => {
                             key={index}
                             className="flex items-start gap-2 p-3 border border-gray-200 bg-gray-50 rounded-lg"
                           >
-                            <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                            <div className="w-2 h-2 bg-[#BAA377] rounded-full mt-2"></div>
                             <div className="flex-1">
                               <p className="text-sm text-gray-900">
                                 {activity?.description}

@@ -67,7 +67,7 @@ const HiddenCaptcha = ({ challenge, onSubmit, onCancel }) => {
             </button>
             <button
               type="submit"
-              className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+              className="flex-1 px-4 py-2 bg-[#BAA377] text-white rounded-md hover:bg-blue-700 transition-colors"
             >
               Verify
             </button>

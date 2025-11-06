@@ -317,8 +317,8 @@ const CognitiveReportPrint = () => {
         .border-slate-200, [class*="border-slate-200"] { border-color: rgb(226, 232, 240) !important; }
         
         /* blue colors */
-        .text-blue-700, [class*="text-blue-700"] { color: rgb(67, 56, 202) !important; }
-        .bg-blue-600, [class*="bg-blue-600"] { background-color: rgb(79, 70, 229) !important; }
+        .text-[#BAA377], [class*="text-[#BAA377]"] { color: rgb(67, 56, 202) !important; }
+        .bg-[#BAA377], [class*="bg-[#BAA377]"] { background-color: rgb(79, 70, 229) !important; }
         .bg-blue-50, [class*="bg-blue-50"] { background-color: rgb(238, 242, 255) !important; }
         .border-blue-200, [class*="border-blue-200"] { border-color: rgb(199, 210, 254) !important; }
         
@@ -889,14 +889,14 @@ const CognitiveReportPrint = () => {
             <div className="flex items-center gap-3">
               <div className="w-40 h-auto flex items-center">
                 <img
-                  src="/logo/logo.svg"
+                  src="/logo/logo__2_-removebg-preview (1).png"
                   alt="CaringAI Listen"
                   className="h-14 w-auto object-contain"
                 />
               </div>
             </div>
             <div className="leading-tight s   items-center text-center justify-end  ">
-              <div className="text-blue-700 font-semibold">CaringAI Listen</div>
+              <div className="text-[#BAA377] font-semibold">CaringAI Listen</div>
               <div className="text-[13px] text-slate-500">
                 Cognitive Assessment Report
               </div>
@@ -908,7 +908,7 @@ const CognitiveReportPrint = () => {
           </div>
 
           {/* <div className="leading-tight items-center text-center sm:hidden block justify-end mb-6  ">
-            <div className="text-blue-700 font-semibold">CaringAI Listen</div>
+            <div className="text-[#BAA377] font-semibold">CaringAI Listen</div>
             <div className="text-[13px] text-slate-500">
               Cognitive Assessment Report
             </div>
@@ -917,7 +917,7 @@ const CognitiveReportPrint = () => {
           <hr className="border-0 h-px bg-gray-300 mb-8" />
 
           <div className="rounded-xl overflow-hidden mb-8">
-            <div className="p-4 bg-[#2E5BFF] border-b border-slate-200 ">
+            <div className="p-4 bg-[#334155] border-b border-slate-200 ">
               <div className="text-lg font-[600] text-white items-center text-center ">
                 Patient Details
               </div>
@@ -976,7 +976,7 @@ const CognitiveReportPrint = () => {
           </div>
 
           <div className="rounded-xl overflow-hidden">
-            <div className="p-4 bg-[#2E5BFF] border-b border-slate-200 ">
+            <div className="p-4 bg-[#334155] border-b border-slate-200 ">
               <div className="text-lg font-[600] text-white items-center text-center ">
                 Clinical Triage Recommendation
               </div>
@@ -1008,7 +1008,7 @@ const CognitiveReportPrint = () => {
           </div>
           <div className="bg-white rounded-2xl   mt-8 overflow-hidden">
             {/* Header */}
-            <div className="bg-[#2E5BFF] text-white text-center p-4 text-lg font-semibold">
+            <div className="bg-[#334155] text-white text-center p-4 text-lg font-semibold">
               Cognitive Status Interpretation
             </div>
 
@@ -1022,7 +1022,7 @@ const CognitiveReportPrint = () => {
               <div className="overflow-x-auto rounded-xl ">
                 <table className="min-w-full text-sm border-l border-r border-b rounded-br-xl rounded-bl-xl bg-white  border-slate-200">
                   <thead>
-                    <tr className="bg-blue-500 text-white text-left">
+                    <tr className="bg-[#334155] text-white text-left">
                       <th className="px-4 py-4 font-medium">Criteria</th>
                       <th className="px-4 py-4 font-medium">Status</th>
                       <th className="px-4 py-4 font-medium">
@@ -1105,14 +1105,14 @@ const CognitiveReportPrint = () => {
             <div className="flex items-center gap-3">
               <div className="w-40 h-auto flex items-center">
                 <img
-                  src="/logo/logo.svg"
+                  src="/logo/logo__2_-removebg-preview (1).png"
                   alt="CaringAI Listen"
                   className="h-14 w-auto object-contain"
                 />
               </div>
             </div>
             <div className="leading-tight items-center text-center justify-end  ">
-              <div className="text-blue-700 font-semibold">CaringAI Listen</div>
+              <div className="text-[#BAA377] font-semibold">CaringAI Listen</div>
               <div className="text-[13px] text-slate-500">
                 Cognitive Assessment Report
               </div>
@@ -1124,7 +1124,7 @@ const CognitiveReportPrint = () => {
           </div>
           <hr className="border-0 h-px bg-gray-300 mb-8" />
 
-          <div className="bg-[#2E5BFF] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
             Care Plan Recommendations
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">
@@ -1134,7 +1134,7 @@ const CognitiveReportPrint = () => {
             <div className="sm:p-6 p-3 ">
               <div className="p-4  bg-white rounded-xl ">
                 <div className="flex justify-between items-start mb-3">
-                  <h2 className="text-lg font-bold text-blue-800">
+                  <h2 className="text-lg font-bold text-[#BAA377]">
                     High-Risk Areas Requiring Immediate Attention:
                   </h2>
                   {/* List Icon */}
@@ -1180,7 +1180,7 @@ const CognitiveReportPrint = () => {
                   {/* Priority Title Bar */}
                   <div className="flex justify-between items-start p-4  ">
                     <div>
-                      <h3 className="text-lg font-bold text-blue-800">
+                      <h3 className="text-lg font-bold text-[#BAA377]">
                         Priority 1: Safety Assessment{" "}
                         <span className="font-bold">(Within 1–2 weeks)</span>
                       </h3>
@@ -1227,7 +1227,7 @@ const CognitiveReportPrint = () => {
                   {/* Priority Title Bar */}
                   <div className="flex justify-between items-start p-4 border-gray-200">
                     <div>
-                      <h3 className="text-lg font-bold text-blue-800">
+                      <h3 className="text-lg font-bold text-[#BAA377]">
                         Priority 2: Specialist Referral{" "}
                         <span className="font-bold">(Within 2–4 weeks)</span>
                       </h3>
@@ -1272,7 +1272,7 @@ const CognitiveReportPrint = () => {
                   {/* Priority Title Bar */}
                   <div className="flex justify-between items-start p-4 ">
                     <div>
-                      <h3 className="text-lg font-bold text-blue-800">
+                      <h3 className="text-lg font-bold text-[#BAA377]">
                         Priority 3: Care Coordination{" "}
                         <span className="font-bold">(Within 1–3 months)</span>
                       </h3>
@@ -1323,14 +1323,14 @@ const CognitiveReportPrint = () => {
             <div className="flex items-center gap-3">
               <div className="w-40 h-auto flex items-center">
                 <img
-                  src="/logo/logo.svg"
+                  src="/logo/logo__2_-removebg-preview (1).png"
                   alt="CaringAI Listen"
                   className="h-14 w-auto object-contain"
                 />
               </div>
             </div>
             <div className="leading-tight items-center text-center justify-end  ">
-              <div className="text-blue-700 font-semibold">CaringAI Listen</div>
+              <div className="text-[#BAA377] font-semibold">CaringAI Listen</div>
               <div className="text-[13px] text-slate-500">
                 Cognitive Assessment Report
               </div>
@@ -1342,7 +1342,7 @@ const CognitiveReportPrint = () => {
           </div>
           <hr className="border-0 h-px bg-gray-300 mb-8" />
 
-          <div className="bg-[#2E5BFF] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
             Cognitive Domain Performance Summary
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">
@@ -1410,7 +1410,7 @@ const CognitiveReportPrint = () => {
                     Preserved Domains
                   </h2>
                   <div className="p-2 bg-blue-50 rounded-full flex items-center justify-center">
-                    <AiFillCheckCircle className="h-5 w-5 text-blue-500" />
+                    <AiFillCheckCircle className="h-5 w-5 text-[#BAA377]" />
                   </div>
                 </div>
 
@@ -1495,14 +1495,14 @@ const CognitiveReportPrint = () => {
             <div className="flex items-center gap-3">
               <div className="w-40 h-auto flex items-center">
                 <img
-                  src="/logo/logo.svg"
+                  src="/logo/logo__2_-removebg-preview (1).png"
                   alt="CaringAI Listen"
                   className="h-14 w-auto object-contain"
                 />
               </div>
             </div>
             <div className="leading-tight items-center text-center justify-end  ">
-              <div className="text-blue-700 font-semibold">CaringAI Listen</div>
+              <div className="text-[#BAA377] font-semibold">CaringAI Listen</div>
               <div className="text-[13px] text-slate-500">
                 Cognitive Assessment Report
               </div>
@@ -1513,7 +1513,7 @@ const CognitiveReportPrint = () => {
             </div>
           </div>
           <hr className="border-0 h-px bg-gray-300 mb-8" />
-          <div className="bg-[#2E5BFF] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
             Care Plan Recommendations
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">
@@ -1527,7 +1527,7 @@ const CognitiveReportPrint = () => {
                   </h2>
                   {/* List Icon using React Icons */}
                   <div className="p-2 bg-blue-50 rounded-full flex items-center justify-center">
-                    <AiOutlineUnorderedList className="h-5 w-5 text-blue-500" />
+                    <AiOutlineUnorderedList className="h-5 w-5 text-[#BAA377]" />
                   </div>
                 </div>
 
@@ -1564,12 +1564,12 @@ const CognitiveReportPrint = () => {
                   {/* Depression Card */}
                   <div className="flex-1 p-4 bg-gray-50 border border-gray-200 rounded-lg flex items-center space-x-4">
                     <div className="text-center">
-                      <div className="bg-blue-100 text-blue-800 font-semibold py-1 px-3 rounded-md text-sm">
+                      <div className="bg-white shadow-sm text-[#BAA377] font-semibold py-1 px-3 rounded-md text-sm">
                         Score <br /> 2/15
                       </div>
                     </div>
                     <div>
-                      <p className="font-semibold text-blue-700">
+                      <p className="font-semibold text-[#BAA377]">
                         Depression (GDS-15)
                       </p>
                       <p className="text-gray-600 text-sm">
@@ -1581,12 +1581,12 @@ const CognitiveReportPrint = () => {
                   {/* Anxiety Card */}
                   <div className="flex-1 p-4 bg-gray-50 border border-gray-200 rounded-lg flex items-center space-x-4">
                     <div className="text-center">
-                      <div className="bg-blue-100 text-blue-800 font-semibold py-1 px-3 rounded-md text-sm">
+                      <div className="bg-white shadow-sm text-[#BAA377] font-semibold py-1 px-3 rounded-md text-sm">
                         Score <br /> 1/21
                       </div>
                     </div>
                     <div>
-                      <p className="font-semibold text-blue-700">
+                      <p className="font-semibold text-[#BAA377]">
                         Anxiety (GAD-7):
                       </p>
                       <p className="text-gray-600 text-sm">
@@ -1599,7 +1599,7 @@ const CognitiveReportPrint = () => {
             </div>
           </div>
 
-          <div className="bg-[#2E5BFF] text-white p-4 text-center text-xl font-semibold mt-6 rounded-tl-xl rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white p-4 text-center text-xl font-semibold mt-6 rounded-tl-xl rounded-tr-xl tracking-wide">
             Follow-up Schedule
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">
@@ -1608,11 +1608,11 @@ const CognitiveReportPrint = () => {
                 {/* Table Container */}
                 <div className="w-full">
                   {/* Table Header */}
-                  <div className="grid grid-cols-3 bg-blue-500 text-white font-semibold text-sm sm:text-base">
-                    <div className="p-4 border-r border-blue-400">
+                  <div className="grid grid-cols-3 bg-[#334155] text-white font-semibold text-sm sm:text-base">
+                    <div className="p-4 border-r border-[#BAA377]">
                       Timeframe
                     </div>
-                    <div className="p-4 border-r border-blue-400">
+                    <div className="p-4 border-r border-[#BAA377]">
                       Action Required
                     </div>
                     <div className="p-4">Provider</div>
@@ -1683,14 +1683,14 @@ const CognitiveReportPrint = () => {
             <div className="flex items-center gap-3">
               <div className="w-40 h-auto flex items-center">
                 <img
-                  src="/logo/logo.svg"
+                  src="/logo/logo__2_-removebg-preview (1).png"
                   alt="CaringAI Listen"
                   className="h-14 w-auto object-contain"
                 />
               </div>
             </div>
             <div className="leading-tight items-center text-center justify-end  ">
-              <div className="text-blue-700 font-semibold">CaringAI Listen</div>
+              <div className="text-[#BAA377] font-semibold">CaringAI Listen</div>
               <div className="text-[13px] text-slate-500">
                 Cognitive Assessment Report
               </div>
@@ -1702,7 +1702,7 @@ const CognitiveReportPrint = () => {
           </div>
           <hr className="border-0 h-px bg-gray-300 mb-8" />
 
-          <div className="bg-[#2E5BFF] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
             Detailed Assessment Results
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">
@@ -1727,7 +1727,7 @@ const CognitiveReportPrint = () => {
                 </section>
                 <hr className="border-0 h-px bg-gray-300 mb-8" />
                 <section className="">
-                  <h2 className="text-xl sm:text-2xl font-bold text-blue-700 mb-8">
+                  <h2 className="text-xl sm:text-2xl font-bold text-[#BAA377] mb-8">
                     Domains of Concern
                   </h2>
 
@@ -1744,7 +1744,7 @@ const CognitiveReportPrint = () => {
                   </p>
 
                   <div className="p-4 sm:p-6 bg-gray-100   rounded-2xl">
-                    <h4 className="text-base font-bold text-blue-800 mb-4">
+                    <h4 className="text-base font-bold text-[#BAA377] mb-4">
                       Count Backward 20 to 1 (6CIT)
                     </h4>
 
@@ -1800,14 +1800,14 @@ const CognitiveReportPrint = () => {
             <div className="flex items-center gap-3">
               <div className="w-40 h-auto flex items-center">
                 <img
-                  src="/logo/logo.svg"
+                  src="/logo/logo__2_-removebg-preview (1).png"
                   alt="CaringAI Listen"
                   className="h-14 w-auto object-contain"
                 />
               </div>
             </div>
             <div className="leading-tight items-center text-center justify-end  ">
-              <div className="text-blue-700 font-semibold">CaringAI Listen</div>
+              <div className="text-[#BAA377] font-semibold">CaringAI Listen</div>
               <div className="text-[13px] text-slate-500">
                 Cognitive Assessment Report
               </div>
@@ -1819,7 +1819,7 @@ const CognitiveReportPrint = () => {
           </div>
           <hr className="border-0 h-px bg-gray-300 mb-8" />
 
-          <div className="bg-[#2E5BFF] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
             Cognitive Domain Analysis
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">
@@ -1839,7 +1839,7 @@ const CognitiveReportPrint = () => {
 
                   {/* --- Nested Test Result Box (Delayed Address Recall) --- */}
                   <div className="p-4 sm:p-6 bg-gray-100  rounded-2xl">
-                    <h4 className="text-base font-bold text-blue-800 mb-4">
+                    <h4 className="text-base font-bold text-[#BAA377] mb-4">
                       Delayed Address Recall (6CIT)
                     </h4>
 
@@ -1904,7 +1904,7 @@ const CognitiveReportPrint = () => {
 
                   {/* --- Nested Test Result Box (Digit Span Backwards) --- */}
                   <div className="p-4 sm:p-6 bg-gray-100   rounded-2xl">
-                    <h4 className="text-base font-bold text-blue-800 mb-4">
+                    <h4 className="text-base font-bold text-[#BAA377] mb-4">
                       Digit Span Backwards (Supplemental)
                     </h4>
 
@@ -1963,14 +1963,14 @@ const CognitiveReportPrint = () => {
             <div className="flex items-center gap-3">
               <div className="w-40 h-auto flex items-center">
                 <img
-                  src="/logo/logo.svg"
+                  src="/logo/logo__2_-removebg-preview (1).png"
                   alt="CaringAI Listen"
                   className="h-14 w-auto object-contain"
                 />
               </div>
             </div>
             <div className="leading-tight items-center text-center justify-end  ">
-              <div className="text-blue-700 font-semibold">CaringAI Listen</div>
+              <div className="text-[#BAA377] font-semibold">CaringAI Listen</div>
               <div className="text-[13px] text-slate-500">
                 Cognitive Assessment Report
               </div>
@@ -1982,14 +1982,14 @@ const CognitiveReportPrint = () => {
           </div>
           <hr className="border-0 h-px bg-gray-300 mb-8" />
 
-          <div className="bg-[#2E5BFF] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
             Cognitive Domain Analysis
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">
             <div className="p-4 sm:p-6 md:p-6 lg:p-6 bg-gray-50  ">
               <div className="w-full mx-auto bg-white   rounded-xl p-6 sm:p-8 md:p-10 space-y-8">
                 {/* --- Preserved Domains Header (Overall) --- */}
-                <h2 className="text-xl sm:text-2xl font-bold text-blue-700 mb-4">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#BAA377] mb-4">
                   Preserved Domains
                 </h2>
 
@@ -2006,7 +2006,7 @@ const CognitiveReportPrint = () => {
 
                   {/* --- Nested Test Result Box (Year / Month / Day of Week) --- */}
                   <div className="p-4 sm:p-6 bg-gray-100  rounded-2xl">
-                    <h4 className="text-base font-bold text-blue-800 mb-4">
+                    <h4 className="text-base font-bold text-[#BAA377] mb-4">
                       Year / Month / Day of Week (6CIT)
                     </h4>
 
@@ -2050,7 +2050,7 @@ const CognitiveReportPrint = () => {
 
                   {/* --- Nested Test Result Box (Sentence Repetition) --- */}
                   <div className="p-4 sm:p-6 bg-gray-100  rounded-2xl">
-                    <h4 className="text-base font-bold text-blue-800 mb-4">
+                    <h4 className="text-base font-bold text-[#BAA377] mb-4">
                       Sentence Repetition (2 phrases)
                     </h4>
 
@@ -2102,14 +2102,14 @@ const CognitiveReportPrint = () => {
             <div className="flex items-center gap-3">
               <div className="w-40 h-auto flex items-center">
                 <img
-                  src="/logo/logo.svg"
+                  src="/logo/logo__2_-removebg-preview (1).png"
                   alt="CaringAI Listen"
                   className="h-14 w-auto object-contain"
                 />
               </div>
             </div>
             <div className="leading-tight items-center text-center justify-end  ">
-              <div className="text-blue-700 font-semibold">CaringAI Listen</div>
+              <div className="text-[#BAA377] font-semibold">CaringAI Listen</div>
               <div className="text-[13px] text-slate-500">
                 Cognitive Assessment Report
               </div>
@@ -2121,7 +2121,7 @@ const CognitiveReportPrint = () => {
           </div>
           <hr className="border-0 h-px bg-gray-300 mb-8" />
 
-          <div className="bg-[#2E5BFF] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
             Functional Assessment Details{" "}
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">
@@ -2164,7 +2164,7 @@ const CognitiveReportPrint = () => {
               </div>
             </div>
           </div>
-          <div className="bg-[#2E5BFF] text-white mt-6 p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white mt-6 p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
             Functional Assessment Details{" "}
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">
@@ -2217,14 +2217,14 @@ const CognitiveReportPrint = () => {
             <div className="flex items-center gap-3">
               <div className="w-40 h-auto flex items-center">
                 <img
-                  src="/logo/logo.svg"
+                  src="/logo/logo__2_-removebg-preview (1).png"
                   alt="CaringAI Listen"
                   className="h-14 w-auto object-contain"
                 />
               </div>
             </div>
             <div className="leading-tight items-center text-center justify-end  ">
-              <div className="text-blue-700 font-semibold">CaringAI Listen</div>
+              <div className="text-[#BAA377] font-semibold">CaringAI Listen</div>
               <div className="text-[13px] text-slate-500">
                 Cognitive Assessment Report
               </div>
@@ -2236,7 +2236,7 @@ const CognitiveReportPrint = () => {
           </div>
           <hr className="border-0 h-px bg-gray-300 mb-8" />
 
-          <div className="bg-[#2E5BFF] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
             Mental Health Assessment Details
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">
@@ -2261,7 +2261,7 @@ const CognitiveReportPrint = () => {
                   {/* Score Column (Left) */}
                   <div className="flex-shrink-0 text-center mb-4 sm:mb-0">
                     <div className="bg-white border border-gray-300 text-gray-800 py-2 px-4 flex rounded-md text-center ">
-                      <span className="text-base font-bold text-blue-500">
+                      <span className="text-base font-bold text-[#BAA377]">
                         Score
                       </span>
                       <br />
@@ -2274,7 +2274,7 @@ const CognitiveReportPrint = () => {
 
                   {/* Reported Symptoms Column (Right) */}
                   <div>
-                    <h3 className="font-bold text-blue-800 mb-2 text-base sm:text-lg">
+                    <h3 className="font-bold text-[#BAA377] mb-2 text-base sm:text-lg">
                       Reported Symptoms:
                     </h3>
                     <ul className="list-disc ml-5 space-y-1 text-gray-700">
@@ -2302,7 +2302,7 @@ const CognitiveReportPrint = () => {
             </div>
           </div>
 
-          <div className="bg-[#2E5BFF] text-white mt-6 p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white mt-6 p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
             Mental Health Assessment Details
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">
@@ -2325,7 +2325,7 @@ const CognitiveReportPrint = () => {
                   {/* Score Column (Left) */}
                   <div className="flex-shrink-0 text-center mb-4 sm:mb-0">
                     <div className="bg-white border border-gray-300 text-gray-800 py-2 px-4 rounded-md text-center flex">
-                      <span className="text-base font-bold text-blue-500">
+                      <span className="text-base font-bold text-[#BAA377]">
                         Score
                       </span>
                       <br />
@@ -2338,7 +2338,7 @@ const CognitiveReportPrint = () => {
 
                   {/* Reported Symptoms Column (Right) */}
                   <div>
-                    <h3 className="font-bold text-blue-800 mb-2 text-base sm:text-lg">
+                    <h3 className="font-bold text-[#BAA377] mb-2 text-base sm:text-lg">
                       Reported Symptoms:
                     </h3>
                     <ul className="list-disc ml-5 space-y-1 text-gray-700">
@@ -2371,14 +2371,14 @@ const CognitiveReportPrint = () => {
             <div className="flex items-center gap-3">
               <div className="w-40 h-auto flex items-center">
                 <img
-                  src="/logo/logo.svg"
+                  src="/logo/logo__2_-removebg-preview (1).png"
                   alt="CaringAI Listen"
                   className="h-14 w-auto object-contain"
                 />
               </div>
             </div>
             <div className="leading-tight items-center text-center justify-end  ">
-              <div className="text-blue-700 font-semibold">CaringAI Listen</div>
+              <div className="text-[#BAA377] font-semibold">CaringAI Listen</div>
               <div className="text-[13px] text-slate-500">
                 Cognitive Assessment Report
               </div>
@@ -2390,7 +2390,7 @@ const CognitiveReportPrint = () => {
           </div>
           <hr className="border-0 h-px bg-gray-300 mb-8" />
 
-          <div className="bg-[#2E5BFF] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
             Understanding Cognitive Decline and Dementia
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">
@@ -2423,7 +2423,7 @@ const CognitiveReportPrint = () => {
 
                   {/* --- Mild Neurocognitive Disorder (MCI) Box --- */}
                   <div className="p-4 sm:p-6 bg-gray-100   rounded-2xl">
-                    <h3 className="text-lg font-bold text-blue-800 mb-3">
+                    <h3 className="text-lg font-bold text-[#BAA377] mb-3">
                       Mild Neurocognitive Disorder (MCI):
                     </h3>
 
@@ -2447,7 +2447,7 @@ const CognitiveReportPrint = () => {
             </div>
           </div>
 
-          <div className="bg-[#2E5BFF] text-white mt-6 p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white mt-6 p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
             Understanding Cognitive Decline and Dementia
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">
@@ -2455,7 +2455,7 @@ const CognitiveReportPrint = () => {
               <div className="w-full mx-auto bg-white  rounded-xl p-6 sm:p-8 md:p-10">
                 <section className=" ">
                   <div className="p-4 sm:p-6 bg-gray-100   rounded-2xl">
-                    <h3 className="text-lg font-bold text-blue-800 mb-3">
+                    <h3 className="text-lg font-bold text-[#BAA377] mb-3">
                       Major Neurocognitive Disorder (Dementia):
                     </h3>
 
@@ -2485,14 +2485,14 @@ const CognitiveReportPrint = () => {
             <div className="flex items-center gap-3">
               <div className="w-40 h-auto flex items-center">
                 <img
-                  src="/logo/logo.svg"
+                  src="/logo/logo__2_-removebg-preview (1).png"
                   alt="CaringAI Listen"
                   className="h-14 w-auto object-contain"
                 />
               </div>
             </div>
             <div className="leading-tight items-center text-center justify-end  ">
-              <div className="text-blue-700 font-semibold">CaringAI Listen</div>
+              <div className="text-[#BAA377] font-semibold">CaringAI Listen</div>
               <div className="text-[13px] text-slate-500">
                 Cognitive Assessment Report
               </div>
@@ -2504,7 +2504,7 @@ const CognitiveReportPrint = () => {
           </div>
           <hr className="border-0 h-px bg-gray-300 mb-8" />
 
-          <div className="bg-[#2E5BFF] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
             Understanding Cognitive Decline and Dementia
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">
@@ -2524,7 +2524,7 @@ const CognitiveReportPrint = () => {
 
                 <section className="mb-6">
                   <div className="p-4 sm:p-6 bg-gray-100  rounded-2xl">
-                    <h3 className="text-lg font-bold text-blue-800 mb-3">
+                    <h3 className="text-lg font-bold text-[#BAA377] mb-3">
                       Memory Systems:
                     </h3>
 
@@ -2547,7 +2547,7 @@ const CognitiveReportPrint = () => {
                 </section>
                 <section className="mb-6">
                   <div className="p-4 sm:p-6 bg-gray-100  rounded-2xl">
-                    <h3 className="text-lg font-bold text-blue-800 mb-3">
+                    <h3 className="text-lg font-bold text-[#BAA377] mb-3">
                       Executive Functions:
                     </h3>
 
@@ -2575,7 +2575,7 @@ const CognitiveReportPrint = () => {
                 </section>
                 <section className="mb-6">
                   <div className="p-4 sm:p-6 bg-gray-100  rounded-2xl">
-                    <h3 className="text-lg font-bold text-blue-800 mb-3">
+                    <h3 className="text-lg font-bold text-[#BAA377] mb-3">
                       Attention and Processing:
                     </h3>
 
@@ -2598,7 +2598,7 @@ const CognitiveReportPrint = () => {
                 </section>
                 <section className="mb-0">
                   <div className="p-4 sm:p-6 bg-gray-100  rounded-2xl">
-                    <h3 className="text-lg font-bold text-blue-800 mb-3">
+                    <h3 className="text-lg font-bold text-[#BAA377] mb-3">
                       Language and ommunication:
                     </h3>
 
@@ -2627,14 +2627,14 @@ const CognitiveReportPrint = () => {
             <div className="flex items-center gap-3">
               <div className="w-40 h-auto flex items-center">
                 <img
-                  src="/logo/logo.svg"
+                  src="/logo/logo__2_-removebg-preview (1).png"
                   alt="CaringAI Listen"
                   className="h-14 w-auto object-contain"
                 />
               </div>
             </div>
             <div className="leading-tight items-center text-center justify-end  ">
-              <div className="text-blue-700 font-semibold">CaringAI Listen</div>
+              <div className="text-[#BAA377] font-semibold">CaringAI Listen</div>
               <div className="text-[13px] text-slate-500">
                 Cognitive Assessment Report
               </div>
@@ -2646,7 +2646,7 @@ const CognitiveReportPrint = () => {
           </div>
           <hr className="border-0 h-px bg-gray-300 mb-8" />
 
-          <div className="bg-[#2E5BFF] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
             Understanding Cognitive Decline and Dementia
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">
@@ -2719,7 +2719,7 @@ const CognitiveReportPrint = () => {
               </div>
             </div>
           </div>
-          <div className="bg-[#2E5BFF] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl mt-6 rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl mt-6 rounded-tr-xl tracking-wide">
             Clinical Decision Support
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">
@@ -2763,14 +2763,14 @@ const CognitiveReportPrint = () => {
             <div className="flex items-center gap-3">
               <div className="w-40 h-auto flex items-center">
                 <img
-                  src="/logo/logo.svg"
+                  src="/logo/logo__2_-removebg-preview (1).png"
                   alt="CaringAI Listen"
                   className="h-14 w-auto object-contain"
                 />
               </div>
             </div>
             <div className="leading-tight items-center text-center justify-end  ">
-              <div className="text-blue-700 font-semibold">CaringAI Listen</div>
+              <div className="text-[#BAA377] font-semibold">CaringAI Listen</div>
               <div className="text-[13px] text-slate-500">
                 Cognitive Assessment Report
               </div>
@@ -2782,7 +2782,7 @@ const CognitiveReportPrint = () => {
           </div>
           <hr className="border-0 h-px bg-gray-300 mb-8" />
 
-          <div className="bg-[#2E5BFF] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl rounded-tr-xl tracking-wide">
             Clinical Decision Support
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">
@@ -2851,7 +2851,7 @@ const CognitiveReportPrint = () => {
               </div>
             </div>
           </div>
-          <div className="bg-[#2E5BFF] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl mt-6 rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl mt-6 rounded-tr-xl tracking-wide">
             Glossary of Terms
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">
@@ -2867,7 +2867,7 @@ const CognitiveReportPrint = () => {
                         width="16"
                         height="16"
                         viewBox="0 0 24 24"
-                        fill="#3b82f6" // Tailwind blue-500
+                        fill="#BAA377" // Tailwind blue-500
                         stroke="none"
                       >
                         <path d="M23 12L12 23L1 12L12 1L23 12Z"></path>
@@ -2891,7 +2891,7 @@ const CognitiveReportPrint = () => {
                         width="16"
                         height="16"
                         viewBox="0 0 24 24"
-                        fill="#3b82f6" // Tailwind blue-500
+                        fill="#BAA377" // Tailwind blue-500
                         stroke="none"
                       >
                         <path d="M23 12L12 23L1 12L12 1L23 12Z"></path>
@@ -2913,7 +2913,7 @@ const CognitiveReportPrint = () => {
                         width="16"
                         height="16"
                         viewBox="0 0 24 24"
-                        fill="#3b82f6" // Tailwind blue-500
+                        fill="#BAA377" // Tailwind blue-500
                         stroke="none"
                       >
                         <path d="M23 12L12 23L1 12L12 1L23 12Z"></path>
@@ -2937,7 +2937,7 @@ const CognitiveReportPrint = () => {
                         width="16"
                         height="16"
                         viewBox="0 0 24 24"
-                        fill="#3b82f6" // Tailwind blue-500
+                        fill="#BAA377" // Tailwind blue-500
                         stroke="none"
                       >
                         <path d="M23 12L12 23L1 12L12 1L23 12Z"></path>
@@ -2963,14 +2963,14 @@ const CognitiveReportPrint = () => {
             <div className="flex items-center gap-3">
               <div className="w-40 h-auto flex items-center">
                 <img
-                  src="/logo/logo.svg"
+                  src="/logo/logo__2_-removebg-preview (1).png"
                   alt="CaringAI Listen"
                   className="h-14 w-auto object-contain"
                 />
               </div>
             </div>
             <div className="leading-tight items-center text-center justify-end  ">
-              <div className="text-blue-700 font-semibold">CaringAI Listen</div>
+              <div className="text-[#BAA377] font-semibold">CaringAI Listen</div>
               <div className="text-[13px] text-slate-500">
                 Cognitive Assessment Report
               </div>
@@ -2982,7 +2982,7 @@ const CognitiveReportPrint = () => {
           </div>
           <hr className="border-0 h-px bg-gray-300 mb-8" />
 
-          <div className="bg-[#2E5BFF] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl mt-6 rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white p-4 text-center text-xl font-semibold  rounded-tl-xl mt-6 rounded-tr-xl tracking-wide">
             Glossary of Terms
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">
@@ -2995,7 +2995,7 @@ const CognitiveReportPrint = () => {
                         width="16"
                         height="16"
                         viewBox="0 0 24 24"
-                        fill="#3b82f6"
+                        fill="#BAA377"
                         stroke="none"
                       >
                         <path d="M23 12L12 23L1 12L12 1L23 12Z"></path>
@@ -3017,7 +3017,7 @@ const CognitiveReportPrint = () => {
                         width="16"
                         height="16"
                         viewBox="0 0 24 24"
-                        fill="#3b82f6" // Tailwind blue-500
+                        fill="#BAA377" // Tailwind blue-500
                         stroke="none"
                       >
                         <path d="M23 12L12 23L1 12L12 1L23 12Z"></path>
@@ -3039,7 +3039,7 @@ const CognitiveReportPrint = () => {
                         width="16"
                         height="16"
                         viewBox="0 0 24 24"
-                        fill="#3b82f6" // Tailwind blue-500
+                        fill="#BAA377" // Tailwind blue-500
                         stroke="none"
                       >
                         <path d="M23 12L12 23L1 12L12 1L23 12Z"></path>
@@ -3062,7 +3062,7 @@ const CognitiveReportPrint = () => {
                         width="16"
                         height="16"
                         viewBox="0 0 24 24"
-                        fill="#3b82f6" // Tailwind blue-500
+                        fill="#BAA377" // Tailwind blue-500
                         stroke="none"
                       >
                         <path d="M23 12L12 23L1 12L12 1L23 12Z"></path>
@@ -3081,7 +3081,7 @@ const CognitiveReportPrint = () => {
                         width="16"
                         height="16"
                         viewBox="0 0 24 24"
-                        fill="#3b82f6" // Tailwind blue-500
+                        fill="#BAA377" // Tailwind blue-500
                         stroke="none"
                       >
                         <path d="M23 12L12 23L1 12L12 1L23 12Z"></path>
@@ -3098,7 +3098,7 @@ const CognitiveReportPrint = () => {
               </div>
             </div>
           </div>
-          <div className="bg-[#2E5BFF] text-white p-4 text-center text-xl  font-semibold  rounded-tl-xl mt-6 rounded-tr-xl tracking-wide">
+          <div className="bg-[#334155] text-white p-4 text-center text-xl  font-semibold  rounded-tl-xl mt-6 rounded-tr-xl tracking-wide">
             References
           </div>
           <div className="w-full mx-auto bg-gray-50 border-l border-b border-r  border-gray-300  rounded-br-xl rounded-bl-xl overflow-hidden">

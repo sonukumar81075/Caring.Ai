@@ -75,7 +75,16 @@ export const LogsModal = ({ isVisible, logs, onClose }) => {
         <div className="p-4 border-t border-gray-200 flex justify-end">
           <button
             onClick={onClose}
-            className="px-8 py-2.5 text-sm font-medium text-white bg-color rounded-md bg-hover cursor-pointer transition-colors shadow-md"
+            className="px-8 py-2.5 text-sm font-medium text-white rounded-md cursor-pointer transition-colors shadow-md"
+            style={{
+              backgroundColor: "#BAA377",
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.backgroundColor = "#A8956A";
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.backgroundColor = "#BAA377";
+            }}
           >
             Close
           </button>

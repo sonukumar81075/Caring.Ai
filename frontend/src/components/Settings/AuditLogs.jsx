@@ -715,9 +715,9 @@ const AuditLogs = () => {
         <div className="flex w-full  justify-between  gap-2 mt-2">
           <Button
             sx={{
-              backgroundColor: "#BAA377",
+              backgroundColor: "#334155",
               "&:hover": {
-                backgroundColor: "#A8956A",
+                backgroundColor: "#192636",
               },  
               padding: "7px 30px",
               borderRadius: "6px",
@@ -729,33 +729,59 @@ const AuditLogs = () => {
             Apply
           </Button>
           <Button
-            variant="outlined"
+            variant="contained"
             onClick={clearFilters}
             style={{
-              backgroundColor: "#ffffff",
-              color: "#475569",
+              backgroundColor: "#BAA377",
+              color: "#ffffff",
               borderRadius: "6px",
               fontWeight: "500",
               padding: "7px 30px",
-              border: "1px solid #9ca3af",
+              border: "1px solid #BAA377",
               fontFamily: "Inter, sans-serif",
+            }}
+            sx={{
+              "&:hover": {
+                backgroundColor: "#A8956A",
+                color: "#ffffff",
+                borderColor: "#A8956A",
+              },
+              "&:disabled": {
+                backgroundColor: "#d1d5db",
+                color: "#9ca3af",
+                borderColor: "#d1d5db",
+                opacity: 0.6,
+              },
             }}
           >
             Clear
           </Button>
           <div className="items-end text-end flex justify-end w-full">
             <Button
-              variant="outlined"
+              variant="contained"
               startIcon={<RefreshIcon />}
               onClick={() => loadAuditLogs(pagination.currentPage)}
               style={{
-                backgroundColor: "#ffffff",
-                color: "#475569",
+                backgroundColor: "#BAA377",
+                color: "#ffffff",
                 borderRadius: "6px",
                 fontWeight: "500",
                 padding: "7px 24px",
-                border: "1px solid #9ca3af",
+                border: "1px solid #BAA377",
                 fontFamily: "Inter, sans-serif",
+              }}
+              sx={{
+                "&:hover": {
+                  backgroundColor: "#A8956A",
+                  color: "#ffffff",
+                  borderColor: "#A8956A",
+                },
+                "&:disabled": {
+                  backgroundColor: "#d1d5db",
+                  color: "#9ca3af",
+                  borderColor: "#d1d5db",
+                  opacity: 0.6,
+                },
               }}
             >
               Refresh

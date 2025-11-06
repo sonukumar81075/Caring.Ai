@@ -31,7 +31,7 @@ export const ScoreProgressBar = ({ current, total, label = "Score" }) => {
           <div className="flex-grow h-3 bg-gray-200 rounded-full overflow-hidden mr-4">
             {/* Progress Fill (75% width for 6/8) */}
             <div
-              className="h-full bg-blue-600 transition-all duration-500 ease-out"
+              className="h-full bg-[#BAA377] transition-all duration-500 ease-out"
               style={{ width: `${percentage}%` }}
             ></div>
           </div>
@@ -44,7 +44,7 @@ export const ScoreProgressBar = ({ current, total, label = "Score" }) => {
 
       {/* 2. Score Box */}
       <div className="p-2 rounded-lg bg-white shadow-md border border-gray-100 text-center w-24">
-        <div className="text-blue-600 font-medium text-lg">{label}</div>
+        <div className="text-[#BAA377] font-medium text-lg">{label}</div>
         <div className="text-xl font-bold text-gray-800">
           {current}/{total}
         </div>

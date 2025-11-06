@@ -290,7 +290,20 @@ const ContractExpiredModal = ({
                   <Button
                     onClick={onClose}
                     disabled={loading}
-                    sx={{ color: "#64748b" }}
+                    variant="contained"
+                    sx={{
+                      backgroundColor: "#BAA377",
+                      color: "#ffffff",
+                      "&:hover": {
+                        backgroundColor: "#A8956A",
+                        color: "#ffffff",
+                      },
+                      "&:disabled": {
+                        backgroundColor: "#d1d5db",
+                        color: "#9ca3af",
+                        opacity: 0.6,
+                      },
+                    }}
                   >
                     Close
                   </Button>

@@ -420,8 +420,8 @@ export const createAssessmentNotificationEmailTemplate = (patientName, doctorNam
                 <div style="text-align: center; margin-bottom: 30px;">
                     <div style="background-color: #dbeafe; width: 60px; height: 60px; border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;">
                         <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9 11l3 3L22 4" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 11l3 3L22 4" stroke="#BAA377" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="#BAA377" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <h2 style="color: #1e293b; margin: 0 0 12px; font-size: 24px; font-weight: 600;">New Assessment Request</h2>
@@ -798,9 +798,9 @@ export const createPhysicianAssessmentNotificationEmailTemplate = (physicianName
                 <div style="text-align: center; margin-bottom: 30px;">
                     <div style="background-color: #dbeafe; width: 60px; height: 60px; border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;">
                         <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="8.5" cy="7" r="4" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M20 8v6M23 11h-6" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="#BAA377" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="8.5" cy="7" r="4" stroke="#BAA377" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 8v6M23 11h-6" stroke="#BAA377" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <h2 style="color: #1e293b; margin: 0 0 12px; font-size: 24px; font-weight: 600;">New Assessment Assignment</h2>

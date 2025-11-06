@@ -4,7 +4,7 @@ import { Users, UserCheck2, Calendar, FileText } from "lucide-react";
 
 const reportsData = [
   {
-    icon: <Users className="w-5 h-5 text-blue-400" />,
+    icon: <Users className="w-5 h-5" style={{ color: '#334155' }} />,
     title: "Patient Reports",
     subtitle: "View analytics",
     borderColor: "border-blue-200",
@@ -12,7 +12,7 @@ const reportsData = [
     link: "/patients",
   },
   {
-    icon: <UserCheck2 className="w-5 h-5 text-green-400" />,
+    icon: <UserCheck2 className="w-5 h-5" style={{ color: '#334155' }} />,
     title: "Doctor Reports",
     subtitle: "View analytics",
     borderColor: "border-green-200",
@@ -20,7 +20,7 @@ const reportsData = [
     link: "/doctors",
   },
   {
-    icon: <Calendar className="w-5 h-5 text-purple-400" />,
+    icon: <Calendar className="w-5 h-5" style={{ color: '#334155' }} />,
     title: "Booking Reports",
     subtitle: "View analytics",
     borderColor: "border-purple-200",
@@ -28,7 +28,7 @@ const reportsData = [
     link: "/booking-queue",
   },
   {
-    icon: <FileText className="w-5 h-5 text-orange-400" />,
+    icon: <FileText className="w-5 h-5" style={{ color: '#334155' }} />,
     title: "Assessment Reports",
     subtitle: "View analytics",
     borderColor: "border-orange-200",

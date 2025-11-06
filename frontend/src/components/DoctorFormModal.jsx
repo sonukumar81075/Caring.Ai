@@ -202,17 +202,29 @@ const DoctorFormModal = ({ open, onClose, onSubmit, editingDoctor }) => {
         >
           <Button
             style={{
-              backgroundColor: "#ffffff",
-              color: "#475569",
+              backgroundColor: "#BAA377",
+              color: "#ffffff",
               borderRadius: "6px",
               fontWeight: "500",
               padding: "7px 24px",
-              border: "1px solid #9ca3af",
+              border: "1px solid #BAA377",
               fontFamily: "Inter, sans-serif",
             }}
             onClick={onClose}
-            variant="outlined"
-            color="error"
+            variant="contained"
+            sx={{
+              "&:hover": {
+                backgroundColor: "#A8956A",
+                color: "#ffffff",
+                borderColor: "#A8956A",
+              },
+              "&:disabled": {
+                backgroundColor: "#d1d5db",
+                color: "#9ca3af",
+                borderColor: "#d1d5db",
+                opacity: 0.6,
+              },
+            }}
           >
             Cancel
           </Button>
@@ -221,9 +233,14 @@ const DoctorFormModal = ({ open, onClose, onSubmit, editingDoctor }) => {
             variant="contained"
             disabled={formik.isSubmitting}
             sx={{
-              background: "linear-gradient(135deg, #BAA377 0%, #A8956A 100%)",
+              background: "#334155",
               "&:hover": {
-                background: "linear-gradient(135deg, #A8956A 0%, #9A8760 100%)",
+                background: "#192636",
+              },
+              "&:disabled": {
+                backgroundColor: "#d1d5db",
+                color: "#9ca3af",
+                opacity: 0.6,
               },
               padding: "7px 20px",
               borderRadius: "6px",

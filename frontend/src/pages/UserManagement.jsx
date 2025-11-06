@@ -280,7 +280,7 @@ const UserManagement = () => {
         transform: "translateX(28px)",
         color: "#fff",
         "& + .MuiSwitch-track": {
-          backgroundColor: "#BAA377", // button color when ON
+          backgroundColor: "#334155", // button color when ON
           opacity: 1,
         },
       },
@@ -701,7 +701,7 @@ const UserManagement = () => {
                   border: "1px solid #D1D5DB",
                   color: "#FFFFFF",
                   borderRadius: "50%",
-                  backgroundColor: "#BAA377",
+                  backgroundColor: "#334155",
                   "&:hover": {
                     backgroundColor: "#A8956A",
                     color: "#ffffff",
@@ -723,7 +723,7 @@ const UserManagement = () => {
                   border: "1px solid #D1D5DB",
                   color: "#FFFFFF",
                   borderRadius: "50%",
-                  backgroundColor: "#BAA377",
+                  backgroundColor: "#334155",
                   "&:hover": {
                     backgroundColor: "#A8956A",
                     color: "#ffffff",
@@ -859,19 +859,26 @@ const UserManagement = () => {
                 <Button
                   onClick={loadUsers}
                   startIcon={<RefreshIcon />}
-                  variant="outlined"
+                  variant="contained"
                   size="small"
                   sx={{
-                    backgroundColor: "#ffffff",
-                    color: "#475569",
+                    backgroundColor: "#BAA377",
+                    color: "#ffffff",
                     borderRadius: "6px",
-                    borderColor: "#9ca3af",
+                    borderColor: "#BAA377",
                     padding: "7px 16px",
                     fontFamily: "Inter, sans-serif",
                     fontWeight: "500",
                     "&:hover": {
-                      backgroundColor: "#f8fafc",
-                      borderColor: "#6b7280",
+                      backgroundColor: "#A8956A",
+                      borderColor: "#A8956A",
+                      color: "#ffffff",
+                    },
+                    "&:disabled": {
+                      backgroundColor: "#d1d5db",
+                      color: "#9ca3af",
+                      borderColor: "#d1d5db",
+                      opacity: 0.6,
                     },
                   }}
                 >
@@ -883,7 +890,7 @@ const UserManagement = () => {
                   variant="contained"
                   size="small"
                   sx={{
-                    backgroundColor: "#BAA377",
+                    backgroundColor: "#334155",
                     "&:hover": {
                       backgroundColor: "#A8956A",
                     },
@@ -1015,18 +1022,25 @@ const UserManagement = () => {
             />
             <Box sx={{ display: "flex", gap: 2, justifyContent: "flex-end" }}>
               <Button
-                variant="outlined"
+                variant="contained"
                 sx={{
-                  backgroundColor: "#ffffff",
-                  color: "#475569",
+                  backgroundColor: "#BAA377",
+                  color: "#ffffff",
                   borderRadius: "6px",
-                  borderColor: "#9ca3af",
+                  borderColor: "#BAA377",
                   padding: "7px 16px",
                   fontFamily: "Inter, sans-serif",
                   fontWeight: "500",
                   "&:hover": {
-                    backgroundColor: "#f8fafc",
-                    borderColor: "#6b7280",
+                    backgroundColor: "#A8956A",
+                    borderColor: "#A8956A",
+                    color: "#ffffff",
+                  },
+                  "&:disabled": {
+                    backgroundColor: "#d1d5db",
+                    color: "#9ca3af",
+                    borderColor: "#d1d5db",
+                    opacity: 0.6,
                   },
                 }}
                 onClick={() => {
@@ -1047,7 +1061,7 @@ const UserManagement = () => {
                 type="submit"
                 variant="contained"
                 sx={{
-                  backgroundColor: "#BAA377",
+                  backgroundColor: "#334155",
                   "&:hover": {
                     backgroundColor: "#A8956A",
                   },
@@ -1176,18 +1190,25 @@ const UserManagement = () => {
             />
             <Box sx={{ display: "flex", gap: 2, justifyContent: "flex-end" }}>
               <Button
-                variant="outlined"
+                variant="contained"
                 sx={{
-                  backgroundColor: "#ffffff",
-                  color: "#475569",
+                  backgroundColor: "#BAA377",
+                  color: "#ffffff",
                   borderRadius: "6px",
-                  borderColor: "#9ca3af",
+                  borderColor: "#BAA377",
                   padding: "7px 16px",
                   fontFamily: "Inter, sans-serif",
                   fontWeight: "500",
                   "&:hover": {
-                    backgroundColor: "#f8fafc",
-                    borderColor: "#6b7280",
+                    backgroundColor: "#A8956A",
+                    borderColor: "#A8956A",
+                    color: "#ffffff",
+                  },
+                  "&:disabled": {
+                    backgroundColor: "#d1d5db",
+                    color: "#9ca3af",
+                    borderColor: "#d1d5db",
+                    opacity: 0.6,
                   },
                 }}
                 onClick={() => {
@@ -1209,7 +1230,7 @@ const UserManagement = () => {
                 type="submit"
                 variant="contained"
                 sx={{
-                  backgroundColor: "#BAA377",
+                  backgroundColor: "#334155",
                   "&:hover": {
                     backgroundColor: "#A8956A",
                   },
@@ -1879,12 +1900,19 @@ const UserManagement = () => {
                     borderRadius: 2,
                     textTransform: "none",
                     fontWeight: 500,
-                    borderColor: "#475569",
-                    color: "#475569",
+                    borderColor: "#BAA377",
+                    backgroundColor: "#BAA377",
+                    color: "#ffffff",
                     "&:hover": {
-                      borderColor: "#334155",
-                      backgroundColor: "#f8fafc",
-                      color: "#334155",
+                      borderColor: "#A8956A",
+                      backgroundColor: "#A8956A",
+                      color: "#ffffff",
+                    },
+                    "&:disabled": {
+                      backgroundColor: "#d1d5db",
+                      color: "#9ca3af",
+                      borderColor: "#d1d5db",
+                      opacity: 0.6,
                     },
                   }}
                 >
@@ -1902,7 +1930,7 @@ const UserManagement = () => {
                     borderRadius: 2,
                     textTransform: "none",
                     fontWeight: 500,
-                    backgroundColor: "#BAA377",
+                    backgroundColor: "#334155",
                     "&:hover": {
                       backgroundColor: "#A8956A",
                     },
@@ -1997,14 +2025,16 @@ const UserManagement = () => {
                       onClick={() => handleEnableTwoFactor()}
                       disabled={twoFactorStatus?.twoFactorEnabled}
                       sx={{
-                        backgroundColor: "#BAA377",
+                        backgroundColor: "#334155",
 
                         "&:hover": {
                           backgroundColor: "#A8956A",
                           color: "#ffffff",
                         },
                         "&:disabled": {
-                          backgroundColor: "grey.500",
+                          backgroundColor: "#d1d5db",
+                          color: "#9ca3af",
+                          opacity: 0.6,
                         },
                         padding: "7px 24px",
                         borderRadius: "6px",
@@ -2020,14 +2050,16 @@ const UserManagement = () => {
                       onClick={() => handleDisableTwoFactor()}
                       disabled={!twoFactorStatus?.twoFactorEnabled}
                       sx={{
-                        backgroundColor: "#BAA377",
+                        backgroundColor: "#334155",
                         color: "#ffffff",
                         "&:hover": {
                           backgroundColor: "#A8956A",
                           color: "#ffffff",
                         },
                         "&:disabled": {
-                          backgroundColor: "grey.500",
+                          backgroundColor: "#d1d5db",
+                          color: "#9ca3af",
+                          opacity: 0.6,
                         },
                         padding: "7px 24px",
                         borderRadius: "6px",
@@ -2037,19 +2069,26 @@ const UserManagement = () => {
                       Disable 2FA
                     </Button>
                     <Button
-                      variant="outlined"
+                      variant="contained"
                       onClick={() => setShowTwoFactorModal(false)}
                       sx={{
-                        backgroundColor: "#ffffff",
-                        color: "#475569",
+                        backgroundColor: "#BAA377",
+                        color: "#ffffff",
                         borderRadius: "6px",
-                        borderColor: "#9ca3af",
+                        borderColor: "#BAA377",
                         padding: "7px 16px",
                         fontFamily: "Inter, sans-serif",
                         fontWeight: "500",
                         "&:hover": {
-                          backgroundColor: "#f8fafc",
-                          borderColor: "#6b7280",
+                          backgroundColor: "#A8956A",
+                          borderColor: "#A8956A",
+                          color: "#ffffff",
+                        },
+                        "&:disabled": {
+                          backgroundColor: "#d1d5db",
+                          color: "#9ca3af",
+                          borderColor: "#d1d5db",
+                          opacity: 0.6,
                         },
                       }}
                     >
@@ -2073,14 +2112,16 @@ const UserManagement = () => {
                       startIcon={<SecurityIcon />}
                       disabled
                       sx={{
-                        backgroundColor: "#BAA377",
+                        backgroundColor: "#334155",
 
                         "&:hover": {
                           backgroundColor: "#334155",
                           color: "#ffffff",
                         },
                         "&:disabled": {
-                          backgroundColor: "grey.500",
+                          backgroundColor: "#d1d5db",
+                          color: "#9ca3af",
+                          opacity: 0.6,
                         },
                         padding: "7px 24px",
                         borderRadius: "6px",
@@ -2091,19 +2132,26 @@ const UserManagement = () => {
                       Enable 2FA
                     </Button>
                     <Button
-                      variant="outlined"
+                      variant="contained"
                       onClick={() => setShowTwoFactorModal(false)}
                       sx={{
-                        backgroundColor: "#ffffff",
-                        color: "#475569",
+                        backgroundColor: "#BAA377",
+                        color: "#ffffff",
                         borderRadius: "6px",
-                        borderColor: "#9ca3af",
+                        borderColor: "#BAA377",
                         padding: "7px 16px",
                         fontFamily: "Inter, sans-serif",
                         fontWeight: "500",
                         "&:hover": {
-                          backgroundColor: "#f8fafc",
-                          borderColor: "#6b7280",
+                          backgroundColor: "#A8956A",
+                          borderColor: "#A8956A",
+                          color: "#ffffff",
+                        },
+                        "&:disabled": {
+                          backgroundColor: "#d1d5db",
+                          color: "#9ca3af",
+                          borderColor: "#d1d5db",
+                          opacity: 0.6,
                         },
                       }}
                     >

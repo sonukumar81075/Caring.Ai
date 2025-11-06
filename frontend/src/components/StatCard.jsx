@@ -77,6 +77,7 @@ const StatCard = ({
           <p className="text-sm font-medium text-gray-600 dark:text-gray-400 mb-1">
             {title}
           </p>
+          
           <div className="flex items-baseline space-x-2">
             <p className="text-3xl font-bold text-gray-900 ">{value}</p>
             {trend && trendValue && (
@@ -90,6 +91,7 @@ const StatCard = ({
               </div>
             )}
           </div>
+
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
             {subtitle}
           </p>

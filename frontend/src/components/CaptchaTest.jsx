@@ -111,10 +111,10 @@ const CaptchaTest = () => {
       {step === 1 && (
         <div className="space-y-4">
           <div className="bg-blue-50 p-4 rounded-md">
-            <h3 className="font-semibold text-blue-800 mb-2">
+            <h3 className="font-semibold text-[#BAA377] mb-2">
               Step 1: Login Attempt
             </h3>
-            <p className="text-blue-700 text-sm">
+            <p className="text-[#BAA377] text-sm">
               Enter credentials to trigger the hidden captcha system
             </p>
           </div>
@@ -146,7 +146,7 @@ const CaptchaTest = () => {
           <button
             onClick={handleLogin}
             disabled={loading}
-            className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 disabled:opacity-50"
+            className="w-full bg-[#BAA377] text-white py-2 px-4 rounded-md hover:bg-blue-700 disabled:opacity-50"
           >
             {loading ? "Signing in..." : "🚀 Test Login"}
           </button>
@@ -211,7 +211,7 @@ const CaptchaTest = () => {
           <div className="text-center">
             <button
               onClick={() => setCaptchaAnswer(getAnswer().toString())}
-              className="text-xs text-blue-600 hover:text-blue-800 underline cursor-pointer"
+              className="text-xs text-blue-600 hover:text-[#BAA377] underline cursor-pointer"
             >
               Auto-fill correct answer ({getAnswer()})
             </button>
@@ -233,7 +233,7 @@ const CaptchaTest = () => {
 
           <button
             onClick={resetTest}
-            className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700"
+            className="w-full bg-[#BAA377] text-white py-2 px-4 rounded-md hover:bg-blue-700"
           >
             🔄 Run Another Test
           </button>
@@ -248,7 +248,7 @@ const CaptchaTest = () => {
               ? "bg-green-50 text-green-700 border border-green-200"
               : message.includes("❌")
               ? "bg-red-50 text-red-700 border border-red-200"
-              : "bg-blue-50 text-blue-700 border border-blue-200"
+              : "bg-blue-50 text-[#BAA377] border border-blue-200"
           }`}
         >
           {message}

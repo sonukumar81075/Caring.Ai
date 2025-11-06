@@ -76,7 +76,7 @@ const HIPAACompliance = () => {
             <div className="flex space-x-3">
               <button
                 onClick={extendSession}
-                className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200"
+                className="flex-1 bg-[#BAA377] hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200"
               >
                 Extend Session
               </button>

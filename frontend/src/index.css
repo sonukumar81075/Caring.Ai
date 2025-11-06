@@ -113,28 +113,28 @@ a {
 /* all project theme */
 
 .bg-color {
-  background: linear-gradient(135deg, #BAA377 0%, #A8956A 100%);
+  background: #334155;
 }
 
 .bg-hover:hover {
-  background: linear-gradient(135deg, #A8956A 0%, #9A8760 100%);
+  background: #192636;
 }
 
 .text-color {
-  color: #BAA377;
+  color: #334155;
 }
 
 .text-brand {
-  color: #1f3044;
+  color: #334155;
 }
 
 .auth_right_color {
-  background: linear-gradient(180deg, #1f3044 0%, #131c28 100%);
+  background: linear-gradient(180deg, #334155 0%, #131c28 100%);
 }
 
 /* Brand gradient utilities - button color */
 .bg-brand-gradient {
-  background: linear-gradient(135deg, #BAA377 0%, #A8956A 100%);
+  background: #334155;
 }
 
 .bg-brand-gradient-light {
@@ -142,7 +142,7 @@ a {
 }
 
 .text-brand-gradient {
-  background: linear-gradient(135deg, #BAA377 0%, #A8956A 100%);
+  background: #334155;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

@@ -39,7 +39,8 @@ const ActionCard = ({
           onClick={onButtonClick}
           className="sm:w-fit w-full text-white font-semibold py-2.5 px-6 rounded-lg text-sm
                  transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2
-                 focus:ring-offset-white cursor-pointer shadow-md hover:shadow-lg hover:opacity-90 bg-brand-gradient"
+                 focus:ring-offset-white cursor-pointer shadow-md hover:shadow-lg hover:opacity-90"
+          style={{ backgroundColor: '#334155' }}
         >
           {buttonText}
         </button>

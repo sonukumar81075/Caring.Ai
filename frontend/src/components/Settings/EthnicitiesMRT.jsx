@@ -256,11 +256,11 @@ const EthnicitiesMRT = () => {
                 border: "1px solid #D1D5DB",
                 color: "#FFFFFF",
                 borderRadius: "50%",
-                  backgroundColor: "#BAA377",
+                  backgroundColor: "#334155",
                 "&:hover": {
-                  backgroundColor: "#A8956A",
+                  backgroundColor: "#BAA377",
                   color: "#ffffff",
-                  borderColor: "#A8956A",
+                  borderColor: "#BAA377",
                 },
                 transition: "all 0.15s ease-in-out",
               }}
@@ -277,11 +277,11 @@ const EthnicitiesMRT = () => {
                 border: "1px solid #D1D5DB",
                 color: "#FFFFFF",
                 borderRadius: "50%",
-                  backgroundColor: "#BAA377",
+                  backgroundColor: "#334155",
                 "&:hover": {
-                  backgroundColor: "#A8956A",
+                  backgroundColor: "#BAA377",
                   color: "#ffffff",
-                  borderColor: "#A8956A",
+                  borderColor: "#BAA377",
                 },
                 transition: "all 0.15s ease-in-out",
               }}
@@ -460,18 +460,31 @@ const EthnicitiesMRT = () => {
                 <Button
                   onClick={loadEthnicities}
                   startIcon={
-                    <RefreshCwIcon className="sm:block hidden" size={16} />
+                    <RefreshCwIcon className="sm:block hidden" size={16} style={{ color: "#ffffff" }} />
                   }
-                  variant="outlined"
+                  variant="contained"
                   size="small"
                   style={{
-                    backgroundColor: "#ffffff",
-                    color: "#475569",
+                    backgroundColor: "#BAA377",
+                    color: "#ffffff",
                     borderRadius: "6px",
                     fontWeight: "500",
                     padding: "7px 24px",
-                    border: "1px solid #9ca3af",
+                    border: "1px solid #BAA377",
                     fontFamily: "Inter, sans-serif",
+                  }}
+                  sx={{
+                    "&:hover": {
+                      backgroundColor: "#A8956A",
+                      borderColor: "#A8956A",
+                      color: "#ffffff",
+                    },
+                    "&:disabled": {
+                      backgroundColor: "#d1d5db",
+                      color: "#9ca3af",
+                      borderColor: "#d1d5db",
+                      opacity: 0.6,
+                    },
                   }}
                 >
                   Refresh
@@ -482,9 +495,9 @@ const EthnicitiesMRT = () => {
                   variant="contained"
                   size="small"
                   sx={{
-                    background: "linear-gradient(135deg, #BAA377 0%, #A8956A 100%)",
+                    background: "#334155",
                     "&:hover": {
-                      background: "linear-gradient(135deg, #A8956A 0%, #9A8760 100%)",
+                      background: "#192636",
                     },
                     padding: "7px 24px",
                     borderRadius: "6px",
@@ -576,27 +589,42 @@ const EthnicitiesMRT = () => {
             <Box sx={{ display: "flex", gap: 2, justifyContent: "flex-end" }}>
               <Button
                 style={{
-                  backgroundColor: "#ffffff",
-                  color: "#475569",
+                  backgroundColor: "#BAA377",
+                  color: "#ffffff",
                   borderRadius: "6px",
                   fontWeight: "500",
                   padding: "7px 24px",
-                  border: "1px solid #9ca3af",
+                  border: "1px solid #BAA377",
                   fontFamily: "Inter, sans-serif",
                 }}
-                variant="outlined"
+                variant="contained"
                 onClick={() => setShowModal(false)}
+                sx={{
+                  "&:hover": {
+                    backgroundColor: "#A8956A",
+                    color: "#ffffff",
+                    borderColor: "#A8956A",
+                  },
+                  "&:disabled": {
+                    backgroundColor: "#d1d5db",
+                    color: "#9ca3af",
+                    borderColor: "#d1d5db",
+                    opacity: 0.6,
+                  },
+                }}
               >
                 Cancel
               </Button>
               <Button
                 sx={{
-                  background: "linear-gradient(135deg, #BAA377 0%, #A8956A 100%)",
+                  background: "#334155",
                   "&:hover": {
-                    background: "linear-gradient(135deg, #A8956A 0%, #9A8760 100%)",
+                    background: "#192636",
                   },
                   "&:disabled": {
-                    backgroundColor: "grey.500",
+                    backgroundColor: "#d1d5db",
+                    color: "#9ca3af",
+                    opacity: 0.6,
                   },
                   padding: {
                     xs: "7px 10px",
