@@ -1,0 +1,274 @@
+@import "tailwindcss";
+
+/* Font loading with fallback */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/* Ensure font loads properly */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* HIPAA Compliance - Secure base styles */
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Ensure all text elements use Inter font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+button,
+input,
+textarea,
+select,
+label,
+a {
+  font-family: "Inter", sans-serif;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+}
+
+/* Custom scrollbar for better UX */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
+
+/* Focus styles for accessibility */
+.focus-visible {
+  @apply outline-none ring-2 ring-blue-500 ring-offset-2 ring-offset-white;
+}
+
+/* HIPAA Security - Prevent text selection on sensitive elements */
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Loading animation */
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* all project theme */
+
+.bg-color {
+  background: linear-gradient(135deg, #BAA377 0%, #A8956A 100%);
+}
+
+.bg-hover:hover {
+  background: linear-gradient(135deg, #A8956A 0%, #9A8760 100%);
+}
+
+.text-color {
+  color: #BAA377;
+}
+
+.text-brand {
+  color: #1f3044;
+}
+
+.auth_right_color {
+  background: linear-gradient(180deg, #1f3044 0%, #131c28 100%);
+}
+
+/* Brand gradient utilities - button color */
+.bg-brand-gradient {
+  background: linear-gradient(135deg, #BAA377 0%, #A8956A 100%);
+}
+
+.bg-brand-gradient-light {
+  background: linear-gradient(135deg, #eef4ff 0%, #e0ebff 100%);
+}
+
+.text-brand-gradient {
+  background: linear-gradient(135deg, #BAA377 0%, #A8956A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.css-13wzr7c-MuiTableContainer-root {
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: "none" !important;
+}
+
+.css-1hoqul-MuiPaper-root {
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: "none" !important;
+}
+
+.css-1hoqul-MuiPaper-root {
+  border-radius: "32px" !important;
+}
+
+
+.css-1qg4fmi-MuiPaper-root {
+  /* Set the top corners to your desired radius (e.g., 8px) */
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
+  box-shadow: none !important;
+
+  /* Ensure the bottom corners remain square (0) */
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.Doctorpagination {
+  border-bottom-left-radius: 12px !important;
+  border-bottom-right-radius: 12px !important;
+  background-color: #e5e7eb;
+}
+
+.css-11rx91p-MuiPaper-root {
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: "none" !important;
+}
+
+.css-1gtchvp-MuiPaper-root {
+  box-shadow: none !important;
+  border-radius: "none" !important;
+}
+
+.css-hglxl1-MuiPaper-root {
+  box-shadow: none !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: "none" !important;
+}
+
+.css-jn0soh {
+  box-shadow: none !important;
+  background-color: #f3f4f6 !important;
+  border-radius: "none" !important;
+}
+
+.css-hhp36n {
+  box-shadow: none !important;
+  background-color: #f3f4f6 !important;
+  border-radius: "none" !important;
+}
+
+.css-m92dd0-MuiTableContainer-root {
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: "none" !important;
+}
+
+/* Print styles for Assessment Report */
+@media print {
+
+  html,
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color-adjust: exact;
+    background: white !important;
+  }
+
+  /* Page setup */
+  @page {
+    size: A4;
+    margin: 16mm 12mm;
+  }
+
+  /* Utility classes for controlling page breaks */
+  .avoid-break {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .page-break-before {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .page-break-after {
+    break-after: page;
+    page-break-after: always;
+  }
+
+  /* Remove shadows/borders that look heavy on paper */
+  .shadow,
+  .shadow-sm,
+  .shadow-md,
+  .shadow-lg,
+  .shadow-xl,
+  .shadow-2xl,
+  .shadow-inner,
+  .shadow-none {
+    box-shadow: none !important;
+  }
+
+  .border-gray-200,
+  .border-gray-300 {
+    border-color: #d1d5db !important;
+  }
+
+  /* Hide interactive UI in print if not already using print:hidden */
+  .no-print {
+    display: none !important;
+  }
+}
