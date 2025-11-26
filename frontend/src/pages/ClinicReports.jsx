@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import React from "react";
 import {
   Building2,
   Users,
@@ -17,6 +18,80 @@ import {
   AlertCircle,
 } from "lucide-react";
 import { ClinicReportsOverview } from "../components/ClinicReports";
+
+// Clinic Report Card Component with Hover Effects
+const ClinicReportCard = ({ title, value, subtitle, icon, iconBgColor, iconColor }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <div
+      className="flex justify-between items-center rounded-xl p-5 outline-1 outline-offset-[-1px] outline-white/40 border border-gray-200 transition-all duration-300 ease-in-out cursor-pointer"
+      style={{
+        backgroundColor: isHovered ? "#334155" : "#ffffff",
+        transform: isHovered ? "translateY(-4px) scale(1.02)" : "translateY(0) scale(1)",
+        boxShadow: isHovered 
+          ? "0px 8px 30px 0px rgba(0,0,0,0.12)" 
+          : "0px 4px 20px 0px rgba(0,0,0,0.05)",
+        transition: "background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.1s ease-in-out, box-shadow 0.3s ease-in-out",
+      }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div>
+        <p 
+          className="text-sm text-gray-500"
+          style={{ 
+            color: isHovered ? "#ffffff" : "#6b7280",
+            transition: "color 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+          }}
+        >
+          {title}
+        </p>
+        <h3 
+          className="text-3xl font-bold mt-1"
+          style={{ 
+            color: isHovered ? "#ffffff" : "#111827",
+            transition: "color 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+          }}
+        >
+          {value}
+        </h3>
+        <p 
+          className="text-sm text-gray-600 mt-1"
+          style={{ 
+            color: isHovered ? "#ffffff" : "#4b5563",
+            transition: "color 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+          }}
+        >
+          {subtitle}
+        </p>
+      </div>
+      <div
+        className={`p-3 rounded-xl transition-all duration-300 ${
+          isHovered ? "bg-white/20" : iconBgColor
+        }`}
+      >
+        {isHovered
+          ? React.cloneElement(icon, {
+              ...icon.props,
+              className: `${icon.props.className || ""} text-white`,
+              style: { 
+                ...icon.props.style,
+                transition: "color 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+              },
+            })
+          : React.cloneElement(icon, {
+              ...icon.props,
+              className: `${icon.props.className || ""} ${iconColor}`,
+              style: { 
+                ...icon.props.style,
+                transition: "color 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+              },
+            })}
+      </div>
+    </div>
+  );
+};
 
 const ClinicReports = () => {
   const [reports, setReports] = useState(null);
@@ -93,7 +168,7 @@ const ClinicReports = () => {
     return (
       <div className="flex items-center justify-center min-h-screen">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#475569] mx-auto mb-4"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#BAA377] mx-auto mb-4"></div>
           <p className="text-gray-600">Loading clinic reports...</p>
         </div>
       </div>
@@ -209,62 +284,44 @@ const ClinicReports = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
         {/* Total Clinics */}
-        <div className="flex justify-between items-center bg-white rounded-xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.05)]  p-5 outline-1 outline-offset-[-1px] outline-white/40  border border-gray-200">
-          <div>
-            <p className="text-sm text-gray-500">Total Clinics</p>
-            <h3 className="text-3xl font-bold text-gray-900 mt-1">
-              {reports?.systemTotals?.totalClinics}
-            </h3>
-            <p className="text-sm text-gray-600 mt-1">
-              {reports?.systemTotals?.activeClinics} Active
-            </p>
-          </div>
-          <div className="bg-blue-100 p-3 rounded-xl">
-            <Building2 className="w-6 h-6 text-blue-600" />
-          </div>
-        </div>
+        <ClinicReportCard
+          title="Total Clinics"
+          value={reports?.systemTotals?.totalClinics}
+          subtitle={`${reports?.systemTotals?.activeClinics} Active`}
+          icon={<Building2 className="w-6 h-6" />}
+          iconBgColor="bg-blue-100"
+          iconColor="text-blue-600"
+        />
 
         {/* Total Patients */}
-        <div className="flex justify-between items-center bg-white rounded-xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.05)]  p-5 outline-1 outline-offset-[-1px] outline-white/40  border border-gray-200">
-          <div>
-            <p className="text-sm text-gray-500">Total Patients</p>
-            <h3 className="text-3xl font-bold text-gray-900 mt-1">
-              {reports?.systemTotals?.totalPatients}
-            </h3>
-            <p className="text-sm text-gray-600 mt-1">Registered patients</p>
-          </div>
-          <div className="bg-green-100 p-3 rounded-xl">
-            <Users className="w-6 h-6 text-green-600" />
-          </div>
-        </div>
+        <ClinicReportCard
+          title="Total Patients"
+          value={reports?.systemTotals?.totalPatients}
+          subtitle="Registered patients"
+          icon={<Users className="w-6 h-6" />}
+          iconBgColor="bg-green-100"
+          iconColor="text-green-600"
+        />
 
         {/* Total Doctors */}
-        <div className="flex justify-between items-center bg-white rounded-xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.05)]  p-5 outline-1 outline-offset-[-1px] outline-white/40  border border-gray-200">
-          <div>
-            <p className="text-sm text-gray-500">Total Doctors</p>
-            <h3 className="text-3xl font-bold text-gray-900 mt-1">
-              {reports?.systemTotals?.totalDoctors}
-            </h3>
-            <p className="text-sm text-gray-600 mt-1">Active doctors</p>
-          </div>
-          <div className="bg-purple-100 p-3 rounded-xl">
-            <UserCheck className="w-6 h-6 text-purple-600" />
-          </div>
-        </div>
+        <ClinicReportCard
+          title="Total Doctors"
+          value={reports?.systemTotals?.totalDoctors}
+          subtitle="Active doctors"
+          icon={<UserCheck className="w-6 h-6" />}
+          iconBgColor="bg-purple-100"
+          iconColor="text-purple-600"
+        />
 
         {/* Total Assessments */}
-        <div className="flex justify-between items-center bg-white rounded-xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.05)]  p-5 outline-1 outline-offset-[-1px] outline-white/40  border border-gray-200">
-          <div>
-            <p className="text-sm text-gray-500">Total Assessments</p>
-            <h3 className="text-3xl font-bold text-gray-900 mt-1">
-              {reports?.systemTotals?.totalAssessments}
-            </h3>
-            <p className="text-sm text-gray-600 mt-1">Completed & pending</p>
-          </div>
-          <div className="bg-orange-100 p-3 rounded-xl">
-            <FileText className="w-6 h-6 text-orange-600" />
-          </div>
-        </div>
+        <ClinicReportCard
+          title="Total Assessments"
+          value={reports?.systemTotals?.totalAssessments}
+          subtitle="Completed & pending"
+          icon={<FileText className="w-6 h-6" />}
+          iconBgColor="bg-orange-100"
+          iconColor="text-orange-600"
+        />
       </div>
 
       {/* Clinic Reports Grid */}

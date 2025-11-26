@@ -835,7 +835,7 @@ const Patients = () => {
         {/* Material React Table */}
         {authLoading ? (
           <Box sx={{ display: "flex", justifyContent: "center", py: 4 }}>
-            <CircularProgress />
+            <CircularProgress sx={{ color: "#BAA377" }} />
             <Typography sx={{ ml: 2 }}>Checking authentication...</Typography>
           </Box>
         ) : (

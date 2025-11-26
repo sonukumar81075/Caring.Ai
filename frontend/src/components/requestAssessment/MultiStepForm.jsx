@@ -228,9 +228,7 @@ const MultiStepForm = () => {
           <Box sx={{ textAlign: "center" }}>
             <CircularProgress
               size={40}
-              color="#475569"
-              sx={{ mb: 2 }}
-              className="text-[#475569]"
+              sx={{ mb: 2, color: "#BAA377" }}
             />
             <p style={{ color: "#6B7280", fontSize: "14px", fontWeight: 500 }}>
               Submitting your assessment request...
@@ -241,7 +239,7 @@ const MultiStepForm = () => {
 
       {/* --- Step Indicator --- */}
       <div className="relative flex items-center justify-between mb-16">
-        <div className="absolute top-1/2 left-0 w-full h-0.5 bg-blue-200 -translate-y-1/2"></div>
+        <div className="absolute top-1/2 left-0 w-full h-0.5 bg-[#334155] -translate-y-1/2"></div>
         <div
           className="absolute top-1/2 left-0 h-0.5 bg-[#334155] -translate-y-1/2 transition-all duration-300"
           style={{ width: `${((step - 1) / (steps?.length - 1)) * 100}%` }}
@@ -259,10 +257,10 @@ const MultiStepForm = () => {
                 className={`flex items-center justify-center w-10 h-10 rounded-full border-2 transition-all duration-300
                   ${
                     isCompleted
-                      ? "bg-[#334155] border-blue-500 text-white"
+                      ? "bg-[#334155] border-[#334155] text-white"
                       : isActive
-                      ? "border-blue-500 text-[#BAA377] bg-white font-medium"
-                      : "border-blue-300 text-[#BAA377] bg-white"
+                      ? "border-[#334155] text-[#334155] bg-white font-medium"
+                      : "border-[#BAA377] text-[#BAA377] bg-white"
                   }`}
               >
                 {isCompleted ? (

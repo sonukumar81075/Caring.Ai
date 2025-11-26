@@ -125,7 +125,7 @@ const SuperAdminDashboard = () => {
     return (
       <div className="flex items-center justify-center min-h-screen">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#475569] mx-auto mb-4"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#BAA377] mx-auto mb-4"></div>
           <p className="text-gray-600">Loading dashboard...</p>
         </div>
       </div>
@@ -157,7 +157,7 @@ const SuperAdminDashboard = () => {
             <h3 className="text-lg font-semibold text-gray-900">
               System Overview
             </h3>
-            <BarChart3 className="w-5 h-5 text-gray-400" />
+            <BarChart3 className="w-5 h-5 text-[#BAA377]" />
           </div>
           <div className="space-y-4">
             <div>
@@ -208,7 +208,7 @@ const SuperAdminDashboard = () => {
               </div>
               <div className="w-full bg-gray-200 rounded-full h-2">
                 <div
-                  className="bg-indigo-200 h-2 rounded-full transition-all duration-300"
+                  className="bg-[#334155] h-2 rounded-full transition-all duration-300"
                   style={{
                     width: `${
                       stats?.totalDoctors > 0
@@ -245,7 +245,7 @@ const SuperAdminDashboard = () => {
                 <div
                   className={`h-2 rounded-full transition-all duration-500 ${
                     (stats?.totalAssessments ?? 0) > 0
-                      ? "bg-violet-500"
+                      ? "bg-[#BAA377]"
                       : "bg-transparent"
                   }`}
                   style={{
@@ -272,7 +272,7 @@ const SuperAdminDashboard = () => {
             <h3 className="text-lg font-semibold text-gray-900 ">
               Recent Clinic Activities
             </h3>
-            <Activity className="w-5 h-5 text-gray-400" />
+            <Activity className="w-5 h-5 text-[#BAA377]" />
           </div>
           <div className="  grid grid-cols-2 gap-4">
             {recentActivities?.length > 0 ? (
@@ -281,7 +281,7 @@ const SuperAdminDashboard = () => {
                   key={index}
                   className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg border border-gray-100"
                 >
-                  <div className="w-2 h-2 bg-green-600 rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-[#BAA377] rounded-full mt-2"></div>
                   <div className="flex-1">
                     <p className="text-sm text-gray-900">
                       {activity?.description}

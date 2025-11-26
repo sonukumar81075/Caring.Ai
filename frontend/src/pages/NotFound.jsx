@@ -39,7 +39,7 @@ const NotFound = () => {
         <div className="space-y-4">
           <button
             onClick={handleGoHome}
-            className="w-full text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] bg-brand-gradient"
+            className="w-full text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 shadow-md hover:shadow-lg   active:scale-[0.98] bg-brand-gradient"
           >
             <Home className="w-5 h-5" />
             {isAuthenticated ? 'Go to Dashboard' : 'Go to Login'}

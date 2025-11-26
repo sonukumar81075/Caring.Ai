@@ -270,7 +270,7 @@ const PatientInformation = ({ initialValues, validationSchema, onSubmit }) => {
                 {/* Selected patient indicator */}
                 {/* {selectingPatient ? (
                 <div className="absolute left-10 top-1/2 transform -translate-y-1/2">
-                  <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-500"></div>
+                  <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-[#BAA377]"></div>
                 </div>
               ) : selectedPatient ? (
                 <div className="absolute left-10 top-1/2 transform -translate-y-1/2">
@@ -310,7 +310,7 @@ const PatientInformation = ({ initialValues, validationSchema, onSubmit }) => {
                   >
                     {isSearching ? (
                       <div className="p-3 text-center text-gray-500">
-                        <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-gray-500 mx-auto"></div>
+                        <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-[#BAA377] mx-auto"></div>
                         <p className="mt-2 text-sm">Searching...</p>
                       </div>
                     ) : searchResults?.length > 0 ? (

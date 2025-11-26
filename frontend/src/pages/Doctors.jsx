@@ -628,7 +628,7 @@ const Doctors = () => {
                 py: 4,
               }}
             >
-              <CircularProgress />
+              <CircularProgress sx={{ color: "#BAA377" }} />
               <Typography variant="body2" sx={{ ml: 2 }}>
                 Loading authentication...
               </Typography>

@@ -255,7 +255,7 @@ const ContractManagement = () => {
   if (loading) {
     return (
       <Box sx={{ display: "flex", justifyContent: "center", p: 4 }}>
-        <CircularProgress />
+        <CircularProgress sx={{ color: "#BAA377" }} />
       </Box>
     );
   }

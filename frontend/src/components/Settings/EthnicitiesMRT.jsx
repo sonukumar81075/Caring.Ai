@@ -439,7 +439,7 @@ const EthnicitiesMRT = () => {
         }}
         muiCircularProgressProps={{
           sx: {
-            color: "#9ca3af",
+            color: "#BAA377",
           },
         }}
         renderTopToolbarCustomActions={({ table }) => (

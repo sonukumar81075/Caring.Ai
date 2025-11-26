@@ -837,7 +837,7 @@ const UserManagement = () => {
           }}
           muiCircularProgressProps={{
             sx: {
-              color: "#9ca3af",
+              color: "#BAA377",
             },
           }}
           muiTablePaperProps={{

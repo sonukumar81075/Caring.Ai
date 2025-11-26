@@ -25,7 +25,7 @@ const ActionCard = ({
         {icon && (
           <div className="flex-shrink-0 ml-4">
             <div
-              className="w-10 h-10 rounded-lg flex items-center justify-center"
+              className="w-10 h-10 rounded-lg flex  items-center justify-center"
               style={{ backgroundColor: "#e2e8f0" }}
             >
               {icon}

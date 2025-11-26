@@ -217,7 +217,6 @@ export const getPatients = async (req, res) => {
 export const getPatientById = async (req, res) => {
   try {
     const { id } = req.params;
-    
     // Validate ObjectId
     if (!mongoose.Types.ObjectId.isValid(id)) {
       return res.status(400).json({

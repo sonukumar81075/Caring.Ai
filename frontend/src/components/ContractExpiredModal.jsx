@@ -313,7 +313,11 @@ const ContractExpiredModal = ({
                   variant="contained"
                   disabled={loading}
                   startIcon={
-                    loading ? <CircularProgress size={16} /> : <Send />
+                    loading ? (
+                      <CircularProgress size={16} sx={{ color: "#BAA377" }} />
+                    ) : (
+                      <Send />
+                    )
                   }
                   sx={{
                     backgroundColor: "#BAA377",

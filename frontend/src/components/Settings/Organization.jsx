@@ -152,7 +152,7 @@ const OrganizationDetails = () => {
           minHeight: "400px",
         }}
       >
-        <CircularProgress />
+        <CircularProgress sx={{ color: "#BAA377" }} />
       </Box>
     );
   }

@@ -1,3 +1,6 @@
+import { useState } from "react";
+import React from "react";
+
 const StatCard = ({
   title,
   value,
@@ -8,6 +11,7 @@ const StatCard = ({
   color = "blue", // default color
   className = "",
 }) => {
+  const [isHovered, setIsHovered] = useState(false);
   const getTrendColor = (trend) => {
     switch (trend) {
       case "up":
@@ -68,18 +72,43 @@ const StatCard = ({
   return (
     <div
       className={`
-      bg-white rounded-xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.05)]  p-6 outline-1 outline-offset-[-1px] outline-white/40  border border-gray-200
+      rounded-xl p-6 outline-1 outline-offset-[-1px] outline-white/40  border border-gray-200
+      transition-all duration-300 ease-in-out cursor-pointer
       ${className}
     `}
+      style={{
+        backgroundColor: isHovered ? "#334155" : "#ffffff",
+        transform: isHovered ? "translateY(-0px) scale(1.02)" : "translateY(0) scale(1)",
+        boxShadow: isHovered
+          ? "0px 8px 30px 0px rgba(0,0,0,0.12)"
+          : "0px 4px 20px 0px rgba(0,0,0,0.05)",
+        transition: "background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
+      }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <div className="flex items-center justify-between">
         <div className="flex-1">
-          <p className="text-sm font-medium text-gray-600 dark:text-gray-400 mb-1">
+          <p
+            className="text-sm font-medium mb-1"
+            style={{
+              color: isHovered ? "#ffffff" : "#4b5563",
+              transition: "color 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+            }}
+          >
             {title}
           </p>
-          
+
           <div className="flex items-baseline space-x-2">
-            <p className="text-3xl font-bold text-gray-900 ">{value}</p>
+            <p
+              className="text-3xl font-bold"
+              style={{
+                color: isHovered ? "#ffffff" : "#111827",
+                transition: "color 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+              }}
+            >
+              {value}
+            </p>
             {trend && trendValue && (
               <div
                 className={`flex items-center space-x-1 ${getTrendColor(
@@ -92,18 +121,42 @@ const StatCard = ({
             )}
           </div>
 
-          <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+          <p
+            className="text-sm mt-1"
+            style={{
+              color: isHovered ? "#ffffff" : "#6b7280",
+              transition: "color 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+            }}
+          >
             {subtitle}
           </p>
         </div>
         {icon && (
           <div className="flex-shrink-0 ml-4">
             <div
-              className={`w-12 h-12 rounded-lg flex items-center justify-center ${
-                ColorMap[color] || ColorMap?.blue
-              }`}
+              className={`w-12 h-12 rounded-lg flex items-center justify-center ${isHovered ? "bg-white/20 scale-110" : ColorMap[color] || ColorMap?.blue
+                }`}
+              style={{
+                transition: "background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s ease-in-out"
+              }}
             >
-              {icon}
+              {isHovered
+                ? React.cloneElement(icon, {
+                  ...icon.props,
+                  stroke: "#ffffff",
+                  style: {
+                    ...icon.props.style,
+                    stroke: "#ffffff",
+                    transition: "stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+                  },
+                })
+                : React.cloneElement(icon, {
+                  ...icon.props,
+                  style: {
+                    ...icon.props.style,
+                    transition: "stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+                  },
+                })}
             </div>
           </div>
         )}
